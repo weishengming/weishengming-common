@@ -17,4 +17,6 @@ public interface UserService {
      */
     public Integer saveUser(String mobile, String password);
 
+    public Boolean checkMobileAndPassword(String mobile, String password);
+
 }
