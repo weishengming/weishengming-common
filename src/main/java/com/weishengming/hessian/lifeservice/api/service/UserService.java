@@ -29,7 +29,7 @@ public interface UserService {
     /**
      * 校验token
      */
-    public Map<String, String> validToken(String userId, String token, long time, Map<String, String> resultMap);
+    public Map<String, String> validToken(String token, long time, Map<String, String> resultMap);
 
     /**
      * 通过手机号获得用户token
