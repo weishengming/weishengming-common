@@ -2,6 +2,8 @@ package com.weishengming.hessian.lifeservice.api.service;
 
 import java.util.Map;
 
+import com.weishengming.hessian.lifeservice.api.bean.UserBean;
+
 /**
  * 用户service
  * @author yangtianci
@@ -27,7 +29,7 @@ public interface UserService {
     /**
      * 校验token
      */
-    public Map<String, String> validToken(String userId, String token, long time, Map<String, String> errInfo);
+    public Map<String, String> validToken(String userId, String token, long time, Map<String, String> resultMap);
 
     /**
      * 通过手机号获得用户token
@@ -38,5 +40,10 @@ public interface UserService {
      * 通过userId获得用户token
      */
     public String getTokenByUserId(String userId);
+
+    /**
+     *  获得用户信息
+     */
+    public UserBean findUserByUserId(String userId);
 
 }
