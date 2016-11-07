@@ -46,4 +46,24 @@ public interface UserService {
      */
     public UserBean findUserByUserId(String userId);
 
+    /**
+     * 更新用户姓名
+     */
+    public Integer updateName(String userId, String name);
+
+    /**
+     * 更新用户年龄
+     */
+    public Integer updateAge(String userId, String age);
+
+    /**
+     * 更新个性签名
+     */
+    public Integer updateSign(String userId, String sign);
+
+    /**
+     * 更新性别
+     */
+    public Integer updateSex(String userId, String sex);
+
 }
