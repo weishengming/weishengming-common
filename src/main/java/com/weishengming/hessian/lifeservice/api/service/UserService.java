@@ -66,4 +66,9 @@ public interface UserService {
      */
     public Integer updateSex(String userId, String sex);
 
+    /**
+     * 更新地址
+     */
+    public Integer updateAddress(String userId, String prov, String city, String county, String address);
+
 }
